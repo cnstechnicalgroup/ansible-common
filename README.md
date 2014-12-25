@@ -13,10 +13,9 @@ Role Variables
 
 In the current version, you can specify the following variables:
 
-| Name               | Default |                                                    |
-|--------------------|---------|----------------------------------------------------|
-| admin_users        |   ---   | List containing all usernames to be created on     |
-|                    |         | target hosts.                                      |
+| Name               | Default |                                                              |
+|--------------------|---------|--------------------------------------------------------------|
+| admin_users        |   ---   | List containing all usernames to be created on target hosts. |
 
 
 Dependencies
