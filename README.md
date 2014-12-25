@@ -1,4 +1,4 @@
-Role: common
+Role: cns.common
 ========
 
 This role sets common configurations for all instance types. (debian)
