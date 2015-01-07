@@ -26,7 +26,7 @@ This package has no dependencies.
 License
 -------
 
-MIT
+GPLv2
 
 Author Information
 ------------------

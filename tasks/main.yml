@@ -4,7 +4,7 @@
   with_items: admin_users
 
 - name: Set up authorized_keys for admins
-  authorized_key: user="{{ item }}" key="{{ lookup('file', 'public_keys/{{ item }}') }}"
+  authorized_key: user="{{ item }}" key="{{ lookup('file', '../public_keys/'+item ) }}"
   with_items: admin_users
 
 - name: Copy sudoers config
