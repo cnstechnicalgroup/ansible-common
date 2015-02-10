@@ -23,6 +23,21 @@ Dependencies
 
 This package has no dependencies.
 
+Placement
+---------
+
+This role assumes the following folder struction:
+```bash
+/ # Main ansible project folder
+├── sites/ # Sites directory containing all sites
+│   ├── sitename/ # Individual site directory
+│   │   ├── group_vars
+│   │   ├── hosts
+│   │   ├── host_vars
+│   │   ├── roles
+│   │   │   ├── cns.common # This role as a submodule
+```
+
 License
 -------
 
