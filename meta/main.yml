@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: cnstechnicalgroup
+  description: Ansible role to configure basic settings for fresh Debian configuration
+  company: CNS Technical Group, Inc.
+  license: GPL2
+  min_ansible_version: 1.8
+  categories:
+  - os
+dependencies: []
