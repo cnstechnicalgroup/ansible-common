@@ -1,11 +1,11 @@
 ---
 - name: Create admin users
   user: name={{ item }} shell=/bin/bash groups=admin,sudo append=yes
-  with_items: admin_users
+  with_items: "{{ admin_users }}"
 
 - name: Set up authorized_keys for admins
   authorized_key: user="{{ item }}" key="{{ lookup('file', '../../public_keys/'+item) }}"
-  with_items: admin_users
+  with_items: "{{ admin_users }}"
 
 - name: Copy sudoers config
   copy: src=etc/sudoers dest=/etc/sudoers owner=root group=root mode=0440
