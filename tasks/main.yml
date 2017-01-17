@@ -24,6 +24,11 @@
   with_items:
     - ntp
     - cron-apt
+    - python-pip
+
+- name: Upgrade awscli to latest
+  pip:
+    name: awscli
 
 - name: Copy cron-apt config
   copy: src=cron-apt/config dest=/etc/cron-apt/config
